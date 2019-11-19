@@ -14,15 +14,15 @@
         
         <TextBlock Margin="0,12,0,0">
             <Run>Directorio de trabajo: </Run>
-            <Run Text="{Binding ElementName=trabajoFolderBrowser, Path=directorio, Mode=TwoWay}"></Run>
+            <Run Text="{Binding ElementName=trabajoFolderBrowser, Path=directorio}"></Run>
         </TextBlock>
         <TextBlock>
             <Run>Directorio temporal:</Run>
-            <Run></Run>
+            <Run Text="{Binding ElementName=temporalFolderBrowser, Path=directorio}"></Run>
         </TextBlock>
         <TextBlock>
             <Run>Directorio de log:</Run>
-            <Run></Run>
+            <Run Text="{Binding ElementName=logFolderBrowser, Path=directorio}"></Run>
         </TextBlock>
     </StackPanel>
 </Window>
