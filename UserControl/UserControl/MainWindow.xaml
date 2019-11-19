@@ -1,15 +1,20 @@
-﻿<Window x:Class="UserControl.MainWindow"
+﻿<Window x:Class="ContolDeUsuario.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UserControl"
+        xmlns:local="clr-namespace:ContolDeUsuario"
         mc:Ignorable="d"
         Title="UserControl" Height="450" Width="800">
-    <StackPanel>
-        <TextBlock>
+    <StackPanel >
+        <local:FolderBrowser x:Name="trabajoFolderBrowser" title="Directorio de trabajo" lectura="False" nuevaCarpeta="False"></local:FolderBrowser>
+        <local:FolderBrowser x:Name="temporalFolderBrowser" title="Directorio de trabajo" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
+        <local:FolderBrowser x:Name="logFolderBrowser" title="Directorio de trabajo" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
+        
+        
+        <TextBlock Margin="0,12,0,0">
             <Run>Directorio de trabajo: </Run>
-            <Run></Run>
+            <Run Text="{Binding ElementName=trabajoFolderBrowser, Path=directorio, Mode=TwoWay}"></Run>
         </TextBlock>
         <TextBlock>
             <Run>Directorio temporal:</Run>

@@ -1,7 +1,7 @@
-﻿<Application x:Class="UserControl.App"
+﻿<Application x:Class="ContolDeUsuario.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:UserControl"
+             xmlns:local="clr-namespace:ContolDeUsuario"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
