@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:UserControl"
         mc:Ignorable="d"
         Title="UserControl" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock>
+            <Run>Directorio de trabajo: </Run>
+            <Run></Run>
+        </TextBlock>
+        <TextBlock>
+            <Run>Directorio temporal:</Run>
+            <Run></Run>
+        </TextBlock>
+        <TextBlock>
+            <Run>Directorio de log:</Run>
+            <Run></Run>
+        </TextBlock>
+    </StackPanel>
 </Window>
