@@ -8,8 +8,8 @@
         Title="UserControl" Height="450" Width="800">
     <StackPanel >
         <local:FolderBrowser x:Name="trabajoFolderBrowser" title="Directorio de trabajo" lectura="False" nuevaCarpeta="False"></local:FolderBrowser>
-        <local:FolderBrowser x:Name="temporalFolderBrowser" title="Directorio de trabajo" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
-        <local:FolderBrowser x:Name="logFolderBrowser" title="Directorio de trabajo" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
+        <local:FolderBrowser x:Name="temporalFolderBrowser" title="Directorio temporal" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
+        <local:FolderBrowser x:Name="logFolderBrowser" title="Directorio de log" lectura="True" nuevaCarpeta="False"></local:FolderBrowser>
         
         
         <TextBlock Margin="0,12,0,0">

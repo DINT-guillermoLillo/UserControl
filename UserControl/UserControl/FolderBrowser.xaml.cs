@@ -38,7 +38,6 @@ namespace ContolDeUsuario
             DependencyProperty.Register("title", typeof(string), typeof(FolderBrowser), new PropertyMetadata("Directorio"));
 
 
-
         public string directorio
         {
             get { return (string)GetValue(directorioProperty); }
@@ -48,8 +47,6 @@ namespace ContolDeUsuario
         // Using a DependencyProperty as the backing store for directorio.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty directorioProperty =
             DependencyProperty.Register("directorio", typeof(string), typeof(FolderBrowser), new PropertyMetadata(""));
-
-
 
 
         public bool lectura
@@ -63,8 +60,6 @@ namespace ContolDeUsuario
             DependencyProperty.Register("lectura", typeof(bool), typeof(FolderBrowser), new PropertyMetadata(false));
 
 
-
-
         public bool nuevaCarpeta
         {
             get { return (bool)GetValue(nuevaCarpetaProperty); }
@@ -74,7 +69,6 @@ namespace ContolDeUsuario
         // Using a DependencyProperty as the backing store for nuevaCarpeta.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty nuevaCarpetaProperty =
             DependencyProperty.Register("nuevaCarpeta", typeof(bool), typeof(FolderBrowser), new PropertyMetadata(true));
-
 
 
 
