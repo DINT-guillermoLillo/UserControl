@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
+
         <ControlTemplate x:Key="TextBoxControl" TargetType="{x:Type TextBox}">
             <Border x:Name="border" CornerRadius="4" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
                 <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
@@ -24,6 +25,7 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </UserControl.Resources>
+    
     <StackPanel>
         <TextBlock Margin="5" Text="{Binding title}"></TextBlock>
         <DockPanel LastChildFill="True">
@@ -31,4 +33,5 @@
             <TextBox Margin="5" Template="{DynamicResource TextBoxControl}" Text="{Binding directorio, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding lectura}"></TextBox>
         </DockPanel>
     </StackPanel>
+    
 </UserControl>
